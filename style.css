@@ -2,6 +2,7 @@
   --clr-hero-bg: #1f2937;
   --clr-hero-text-1: #f9faf8;
   --clr-hero-text-2: #e5e7eb;
+  --clr-btn-sign-up: #3882f6;
 }
 
 html {
@@ -10,6 +11,7 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
+  line-height: 1.4;
 }
 
 *,
@@ -28,8 +30,34 @@ a {
   text-decoration: none;
 }
 
-.hero {
+header {
   background-color: var(--clr-hero-bg);
+  padding: 0 10% 0 10%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.hero-text {
+  padding: 20px 0;
+  width: 50%;
 }
 
 .hero-text-main {
@@ -38,4 +66,21 @@ a {
 
 .hero-text-secondary {
   color: var(--clr-hero-text-2);
+  margin-bottom: 0.5em;
+}
+
+.sign-up {
+  padding: 0.5em 1.5em;
+  color: var(--clr-hero-text-1);
+  background-color: var(--clr-btn-sign-up);
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-up:hover {
+  background-color: #2872e6;
 }
