@@ -160,3 +160,10 @@ header {
   font-size: 1em;
   font-weight: bold;
 }
+
+footer {
+  background-color: var(--clr-hero-bg);
+  color: var(--clr-hero-text-1);
+  padding: 2em;
+  text-align: center;
+}
