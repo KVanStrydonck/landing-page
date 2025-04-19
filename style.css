@@ -3,6 +3,7 @@
   --clr-hero-text-1: #f9faf8;
   --clr-hero-text-2: #e5e7eb;
   --clr-btn-sign-up: #3882f6;
+  --clr-info-text-title: #1f2937;
 }
 
 html {
@@ -32,7 +33,7 @@ a {
 
 header {
   background-color: var(--clr-hero-bg);
-  padding: 0 10% 0 10%;
+  padding: 0 30% 0 20%;
 }
 
 .nav-container {
@@ -83,4 +84,25 @@ header {
 
 .sign-up:hover {
   background-color: #2872e6;
+}
+
+#city-title {
+  text-align: center;
+  padding: 1em;
+  font-size: 2.25em;
+  font-weight: bold;
+  color: var(--clr-info-text-title);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.city img {
+  width: 18.75em;
+  height: 12.5em;
+  object-fit: cover;
 }
