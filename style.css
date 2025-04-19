@@ -29,6 +29,7 @@ ul {
 
 a {
   text-decoration: none;
+  font-size: 1.125em;
 }
 
 header {
@@ -63,6 +64,8 @@ header {
 
 .hero-text-main {
   color: var(--clr-hero-text-1);
+  font-size: 1.125em;
+  padding-bottom: 1em;
 }
 
 .hero-text-secondary {
@@ -105,4 +108,27 @@ header {
   width: 18.75em;
   height: 12.5em;
   object-fit: cover;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+.testimonial {
+  max-width: 50em;
+  color: #1f2937;
+  font-size: 2em;
+  padding: 2em;
+}
+
+.testimonial p {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.testimonial figcaption {
+  font-weight: bold;
+  text-align: right;
 }
