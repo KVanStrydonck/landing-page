@@ -1,0 +1,35 @@
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use predictable sizing */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+html, body {
+  height: 100%; /* Use full viewport height */
+}
+
+body {
+  line-height: 1.5; /* More readable text across site */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* Prevent images from overflowing container */
+}
+
+input, button, textarea, select {
+  font: inherit; /* Ensure consistent typography */
+}
+
+ul, ol {
+  list-style: none; /* Remove default styling from lists */
+}
+
+a {
+  text-decoration: none; /* Remove default styling from links */
+  color: inherit; /* Inherit color from parent */
+}
