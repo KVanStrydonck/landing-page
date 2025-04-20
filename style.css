@@ -1,11 +1,37 @@
+:root {
+  /* Colors */
+  --color-dark-bg: #1F2937; 
+
+  --color-hero-heading: #F9FAF8;
+  --color-hero-subtext: #E5E7EB;
+
+  --color-header-logo: #F9FAF8;
+
+  --color-button-primary: #3882F6;
+
+  --color-info-heading: #1F2937;
+
+  --color-testimonial-bg: #E5E7EB;
+  --color-testimonial-text: #1F2937;
+
+  /* Font sizes */
+  --font-size-hero-main: 48px;
+  --font-size-hero-secondary: 18px;
+  --font-size-header-logo: 24px;
+  --font-size-info-heading: 36px;
+  --font-size-testimonial: 36px;
+
+  /* Font weights */
+  --font-weight-extra-bold: 900;
+  --font-weight-light-italic: 300;
+}
+
+/* Reset */
+
 * {
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
   box-sizing: border-box; /* Use predictable sizing */
-}
-
-body {
-  font-family: "Roboto", sans-serif;
 }
 
 html, body {
@@ -32,4 +58,8 @@ ul, ol {
 a {
   text-decoration: none; /* Remove default styling from links */
   color: inherit; /* Inherit color from parent */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
