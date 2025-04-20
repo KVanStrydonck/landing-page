@@ -5,6 +5,8 @@
   --color-hero-heading: #F9FAF8;
   --color-hero-subtext: #E5E7EB;
 
+  --color-nav-accent: #F90;
+
   --color-header-logo: #F9FAF8;
 
   --color-button-primary: #3882F6;
@@ -60,6 +62,63 @@ a {
   color: inherit; /* Inherit color from parent */
 }
 
+/* General */
+
 body {
   font-family: "Roboto", sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 60%;
+  background: lightgrey;
+}
+
+/* Header */
+
+#logo {
+  width: clamp(80px, 10vw, 150px);
+  height: auto;
+}
+
+header {
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: var(--color-dark-bg);
+}
+
+header img {
+  border-radius: 0.25rem;
+}
+
+nav a {
+  color: var(--color-hero-subtext);
+  font-size: var(--font-size-hero-secondary);
+  font-weight: bold;
+  transition: color 0.2s ease, background-color 0.2s ease; /* Add transition for text and background colors */
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem; /* Add padding so background color is visible on hover and focus */
+}
+
+nav a:hover, nav a:focus {
+  color: white; /* Change text color to plain white on hover and focus */
+  background-color: var(--color-nav-accent); /* Change background color to orange on hover and focus */
+}
+
+nav li:not(:first-child) {
+  margin-left: 2rem;
+}
+
+/* Helper classes */
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-1 {
+  padding: 1rem;
 }
