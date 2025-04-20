@@ -13,6 +13,7 @@
   --color-button-hover: #2872E6;
 
   --color-info-heading: #1F2937;
+  --color-info-text: #4B5563;
 
   --color-testimonial-bg: #E5E7EB;
   --color-testimonial-text: #1F2937;
@@ -22,6 +23,7 @@
   --font-size-hero-secondary: 18px;
   --font-size-header-logo: 24px;
   --font-size-info-heading: 36px;
+  --font-size-info-text: 18px;
   --font-size-testimonial: 36px;
 
   /* Font weights */
@@ -74,7 +76,6 @@ body {
 
 .app-container {
   width: 60%;
-  background: lightgrey;
 }
 
 /* Header */
@@ -154,6 +155,36 @@ nav li:not(:first-child) {
 
 .hero-cta button:hover {
   background-color: var(--color-button-hover);
+}
+
+/* Gallery */
+
+#gallery-title {
+  text-align: center;
+  color: var(--color-info-heading);
+  font-size: var(--font-size-info-heading);
+  font-weight: bold;
+}
+
+.gallery {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.card {
+  width: clamp(250px, 10vw, 300px);
+}
+
+.card img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.card p {
+  color: var(--color-info-text);
+  font-size: var(--font-size-info-text);
 }
 
 /* Helper classes */
