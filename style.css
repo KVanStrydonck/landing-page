@@ -1,6 +1,7 @@
 :root {
   /* Colors */
-  --color-dark-bg: #1F2937; 
+  --color-dark-bg: #1F2937;
+  --color-light-bg: #F0F4F8; 
 
   --color-hero-heading: #F9FAF8;
   --color-hero-subtext: #E5E7EB;
@@ -70,6 +71,8 @@ a {
 body {
   font-family: "Roboto", sans-serif;
 
+  background-color: var(--color-light-bg);
+
   display: flex;
   justify-content: center;
 }
@@ -123,6 +126,8 @@ nav li:not(:first-child) {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.20);
 }
 
 .hero-cta h1 {
@@ -168,12 +173,19 @@ nav li:not(:first-child) {
 
 .gallery {
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Responsive images as screen size changes */
   gap: 1em;
 }
 
 .card {
-  width: clamp(250px, 10vw, 300px);
+  width: clamp(250px, 10vw, 300px); /* Ensure consistent card size */
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1); /* Creates a shadow underneath card */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add a transition for movement and shadow */
+}
+
+.card:hover {
+  transform: translateY(-0.125rem); /* Move card up slightly on hover */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15); /* Also move shadow */
 }
 
 .card img {
@@ -185,6 +197,36 @@ nav li:not(:first-child) {
 .card p {
   color: var(--color-info-text);
   font-size: var(--font-size-info-text);
+
+  padding: 0.5rem;
+}
+
+/* Testimonial */
+
+.testimonial {
+  background-color: var(--color-testimonial-bg);
+
+  justify-content: center;
+
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.10);
+}
+
+.testimonial figure {
+  padding: 2rem
+}
+
+.testimonial p {
+  color: var(--color-testimonial-text);
+  font-size: var(--font-size-testimonial);
+  font-style: italic;
+}
+
+.testimonial figcaption {
+  color: var(--color-testimonial-text);
+  font-size: var(--font-size-header-logo);
+  font-weight: var(--font-weight-extra-bold);
+
+  text-align: right;
 }
 
 /* Helper classes */
@@ -194,10 +236,19 @@ nav li:not(:first-child) {
   flex-direction: row;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .p-1 {
   padding: 1rem;
 }
 
 .p-2 {
   padding: 2rem;
+}
+
+.m-b-1 {
+  margin-bottom: 1rem;
 }
