@@ -229,6 +229,40 @@ nav li:not(:first-child) {
   text-align: right;
 }
 
+/* Sign up call to action */
+
+.cta-container {
+  justify-content: center;
+  padding: 4rem;
+}
+
+.cta {
+  background-color: var(--color-button-hover);
+  min-width: 90%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 4rem;
+
+  border-radius: 0.25rem;
+
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.08), 
+              0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05);
+}
+
+.cta h2, .cta p, .cta button {
+  color: var(--color-hero-heading);
+}
+
+.cta button {
+  background-color: var(--color-button-primary);
+  border: 1px solid var(--color-hero-heading);
+  border-radius: 0.25rem;
+  padding: 0.2rem 1.5rem;
+  font-weight: bold;
+}
+
 /* Helper classes */
 
 .flex-row {
