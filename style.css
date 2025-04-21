@@ -261,6 +261,12 @@ nav li:not(:first-child) {
   border-radius: 0.25rem;
   padding: 0.2rem 1.5rem;
   font-weight: bold;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: var(--color-button-hover);
 }
 
 /* Helper classes */
