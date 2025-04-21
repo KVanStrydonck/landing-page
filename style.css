@@ -239,9 +239,13 @@ nav li:not(:first-child) {
 .cta {
   background-color: var(--color-button-hover);
   min-width: 90%;
+  max-width: 100%;
 
   justify-content: space-between;
   align-items: center;
+
+  flex-wrap: wrap; /* Button moves under text responsively */
+  gap: 1rem; /* Gap becomes visible when button moves underneath */
 
   padding: 2rem 4rem;
 
@@ -251,8 +255,17 @@ nav li:not(:first-child) {
               0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05);
 }
 
+.cta-text {
+  flex: 1 1 18.75rem;
+  min-width: 0; /* Prevent text overflow */
+}
+
 .cta h2, .cta p, .cta button {
   color: var(--color-hero-heading);
+}
+
+.cta-btn {
+  flex: 0 0 auto; /* No grow or shrink on button and automatic width */
 }
 
 .cta button {
@@ -267,6 +280,21 @@ nav li:not(:first-child) {
 
 .cta button:hover {
   background-color: var(--color-button-hover);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--color-dark-bg);
+  padding: 2rem;
+
+  justify-content: center;
+  flex: 1;
+}
+
+footer p {
+  color: var(--color-hero-heading);
+  font-size: var(--font-size-hero-secondary);
 }
 
 /* Helper classes */
